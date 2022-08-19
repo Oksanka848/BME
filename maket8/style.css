@@ -99,22 +99,24 @@ color: #000000;
 .button-buy {
     width: 270px;
 height: 84px;
+margin-top: 2em;
 background: url(/img/images/button-buy.svg) no-repeat;
 object-fit: contain;
 
 }
+
 .main-pic {
-    flex: 0 1 50%;
+    flex: 0 2 60%;
     flex-direction: column;
     background: url(/img/images/pic.svg) no-repeat;
 justify-self: flex-end;
+
 }
 
 .nav {
-    
-    height: 18vh;
-    
-    }
+        height: 18vh;
+        }
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -126,6 +128,7 @@ justify-self: flex-end;
     align-items: stretch;
     justify-content: space-between;
 list-style: none;
+
 }
 
 .menu__item {
@@ -133,5 +136,13 @@ list-style: none;
 
 }
 
+a {
+   text-decoration: underline !important; 
+}
 
+.card__section {
+    display: flex;
+    flex-direction: row;
+    
 
+}
