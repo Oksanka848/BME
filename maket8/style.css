@@ -1,7 +1,7 @@
 body {
     position: relative;
 width: 1440px;
-height: 90vh;
+height: 96vh;
 
 background: #FFFFFF;
 box-shadow: 0px 20px 100px rgba(8, 24, 81, 0.25);
@@ -11,7 +11,7 @@ border-radius: 10px;
 
 .header {
 position: relative;
-height: 25vh;
+height: 18vh;
 
 }
 
@@ -20,7 +20,7 @@ height: 25vh;
     justify-content: center;
     flex-direction: row;
   place-items: center;
-  height: 10vh;
+  height: 4vh;
   
 
 background: url(/img/images/browser.svg);
@@ -41,10 +41,11 @@ opacity: 0.5;
 
 .header__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    height: 20vh;
+    height: 8vh;
 align-items: flex-end;
+padding-inline: 5em;
 }
 .header__logo {
 
@@ -66,7 +67,7 @@ height: 40px;
     flex-direction: row;
     padding: 1em;
   justify-content: center;
-  height: 1400px;
+  height: 68vh;
   
 }
 
@@ -96,11 +97,10 @@ color: #000000;
 
 
 .button-buy {
-    
-    width: 115px;
-    height: 38px;
+    width: 270px;
+height: 84px;
 background: url(/img/images/button-buy.svg) no-repeat;
-    object-fit: cover;
+object-fit: contain;
 
 }
 .main-pic {
@@ -112,7 +112,7 @@ justify-self: flex-end;
 
 .nav {
     
-    top: 1400px;
+    height: 18vh;
     
     }
 .menu {
