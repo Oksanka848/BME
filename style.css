@@ -1,7 +1,7 @@
 body {
   position: relative;
   width: 1440px;
-  height: 96vh;
+  height: 80%;
 
   background: #ffffff;
   box-shadow: 0px 20px 100px rgba(8, 24, 81, 0.25);
@@ -66,9 +66,9 @@ a {
 .main {
   display: flex;
   flex-direction: row;
-  padding: 1em;
-  justify-content: center;
-  height: 62vh;
+  padding: 1.025em;
+
+  height: 60%;
 }
 
 .main__section {
@@ -86,11 +86,11 @@ a {
   margin-left: 2%;
 }
 
-.main_text {
+.main__text {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 160%;
   color: #000000;
 }
@@ -115,7 +115,7 @@ main > .main > .main-pic > img {
 
 .footer {
   position: relative;
-  height: 18vh;
+  height: 15%;
 }
 
 .menu__vr,
@@ -123,7 +123,7 @@ main > .main > .main-pic > img {
   display: flex;
   flex-direction: row;
   width: 460px;
-  height: 32px;
+  height: 30%;
   list-style: none;
   align-items: flex-start;
   justify-content: space-between;
@@ -143,17 +143,60 @@ main > .main > .main-pic > img {
 
 .catalog__card {
   display: grid;
-  width: 80vw;
-  height: 62vh;
-  grid-template-columns: 45% 45% 45%;
-  grid-template-rows: 1fr 1fr;
+  width: 80%;
+  height: 60vh;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(20vw, 1fr));
+  column-gap: 0.5em;
+  row-gap: 2em;
 }
 .card__title {
   font-family: "Intro ";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 30px;
   line-height: 120%;
 
   color: #000000;
+}
+
+main > .main > .catalog__card > .card > .card__image img {
+  max-width: 70%;
+  grid-area: auto;
+  justify-self: center;
+  background: no-repeat;
+  object-fit: contain;
+}
+.card,
+.form__subscribe,
+.card__body,
+.form__subscribe {
+  display: flex;
+
+  grid-area: auto;
+  flex-direction: column;
+  min-height: 50%;
+  min-width: 50%;
+  text-decoration: inherit;
+}
+
+.form__subscribe {
+  background-color: #ec615b;
+}
+
+.subscribe__button {
+  background-color: #ec615b;
+  display: flex;
+}
+
+.form__subscribe > .card__title {
+  color: #ffffff;
+  margin: inherit;
+  display: block;
+  text-decoration: initial;
+}
+
+.catalog__card > .card__border {
+  border: solid #ec615b;
+  padding: 0.1em;
 }
