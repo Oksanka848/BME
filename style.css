@@ -113,9 +113,9 @@ main > .main > .main-pic > img {
   object-fit: contain;
 }
 
-.footer {
+footer {
   position: relative;
-  height: 15%;
+  height: 10vh;
 }
 
 .menu__vr,
@@ -123,15 +123,14 @@ main > .main > .main-pic > img {
   display: flex;
   flex-direction: row;
   width: 460px;
-  height: 30%;
+  height: 100%;
   list-style: none;
   align-items: flex-start;
   justify-content: space-between;
-  list-style: none;
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 100%;
   line-height: 160%;
 }
 
@@ -149,7 +148,7 @@ main > .main > .main-pic > img {
   grid-template-rows: repeat(auto-fill, minmax(20vw, 1fr));
 
   column-gap: 0.5em;
-  place-items: center;
+  align-items: flex-start;
 }
 .card__title {
   font-family: "Intro ";
@@ -164,17 +163,17 @@ main > .main > .main-pic > img {
 main > .main > .catalog__card > .card > .card__image img {
   max-width: 80%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   background: no-repeat;
   object-fit: cover;
+  margin: 1%;
 }
 .card,
-.form__subscribe,
 .card__body,
-.form__subscribe {
+.form__subscribe,
+.form {
   display: flex;
-
-  grid-area: auto;
+  justify-self: center;
   flex-direction: column;
   min-height: 50%;
   min-width: 50%;
@@ -184,24 +183,28 @@ main > .main > .catalog__card > .card > .card__image img {
 }
 
 .form__subscribe {
+  width: 80%;
   background-color: #ec615b;
-  width: 100%;
+  display: flex;
 }
+
+.form {
+  width: 100%;
+  display: flex;
+}
+
 .form__button_cart {
   display: flex;
-  width: 85%;
-  align-self: center;
+  width: 75%;
+  align-items: center;
 }
 
 .form__subscribe > .card__title {
   color: #ffffff;
 
-  display: block;
-}
-.form__subscribe > .form__button_cart > .subscribe {
   display: flex;
-  width: 100%;
 }
+
 .subscribe__button {
   border-style: none;
   background-color: #ec615b;
